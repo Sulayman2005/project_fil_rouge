@@ -7,9 +7,8 @@ function ErrorPage() {
         <>
             <section className="all_element">
                 <img src={image} alt="image pour illustrer le message d'erreur" className="picture_error" />
-                <div className="error_page">OUPS ! PAGE INTROUVABLE</div>
+                <div className="error_page">Erreur 404 !</div>
                 <p className="text_error">Vous avez certainement frappé à la mauvaise porte, 
-                car je n'arrive pas à poser mon oeil sur la page que vous cherchez
                 </p>
                 <Link to="/">
                     <button className="button_error">Retour à L'accueil</button>

@@ -1,7 +1,10 @@
 .all_element {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7em;
+    background: linear-gradient(135deg,#c35e5e,#ca0000,)
 }
 
 .picture_error {
@@ -11,13 +14,15 @@
 }
 
 .error_page {
+  font-size: 6em;
   margin-top: 70px;
-  color: black;
+  color: white;
 }
 
 .text_error {
+  font-size: 1em;
+  color: white;
   margin-top: 45px;
-  color: black;
 }
 
 .button_error {
