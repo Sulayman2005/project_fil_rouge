@@ -1,4 +1,14 @@
 import "./PortfolioPage.scss"
+import {Link} from "react-router"
+import Sulayman from "../../assets/Sulayman_preview.webp"
+import Preview from "../../assets/picture_dev_preview.webp"
+import Work3 from "../../assets/work3.webp"
+import Ohmyfood from "../../assets/Ohmyfood_preview.webp"
+import Sophie from "../../assets/capture_sophiebluel.webp"
+import Kasa from "../../assets/capture_kasa.webp"
+import Nina from "../../assets/capture nina_carducci.webp"
+import Event from "../../assets/Capture 724_events.webp"
+import Bank from "../../assets/Capture argent bank.webp"
 
 export default function App() {
   return (
@@ -7,7 +17,9 @@ export default function App() {
       <header className="l-header">
         <nav className="nav bd-grid">
           <div>
-            <a href="#" className="nav__logo">Sulayman</a>
+            <Link to="/">
+                <a href="#" className="nav__logo">Sulayman</a>
+            </Link>
           </div>
 
           <div className="nav__menu" id="nav-menu">
@@ -50,7 +62,7 @@ export default function App() {
               </mask>
               <g mask="url(#mask0)">
                 <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                <image className="home__blob-img" x="50" y="60" href="assets/Sulayman_preview.webp" alt="image de sulayman l'auteur de ce portfolio" />
+                <image href={Sulayman} className="home__blob-img" x="50" y="60" alt="image de sulayman l'auteur de ce portfolio" />
               </g>
             </svg>
           </div>
@@ -61,7 +73,7 @@ export default function App() {
           <h2 className="section-title">A propos</h2>
           <div className="about__container bd-grid">
             <div className="about__img">
-              <img src="assets/picture_dev_preview.webp" alt="image montrant une caricature du développement web" />
+              <img src={Preview} alt="image montrant une caricature du développement web" />
             </div>
             <div>
               <h2 className="about__subtitle">Sulayman</h2>
@@ -119,7 +131,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="assets/img/work3.webp" alt="image d'une personne tapant sur son clavier" className="skills__img" loading="lazy" />
+              <img src={Work3} alt="image d'une personne tapant sur son clavier" className="skills__img" loading="lazy" />
             </div>
           </div>
         </section>
@@ -131,7 +143,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/Canteau_Sulayman_P4_ohmyfood" className="work__img">
-                <img src="assets/img/Ohmyfood_preview.webp" alt="projet ohmyfood" loading="lazy" />
+                <img src={Ohmyfood} alt="projet ohmyfood" loading="lazy" />
               </a>
               <p>Création d’un site mobile-first de menus interactifs pour des restaurants à Paris. Intégration HTML/CSS poussée avec animations.</p>
               <p><em>Stack :</em> HTML, SASS, CSS3</p>
@@ -139,7 +151,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/Page_web_dynamique_javascript" className="work__img">
-                <img src="assets/img/capture_sophiebluel.webp" alt="projet sophie bluel" loading="lazy" />
+                <img src={Sophie} alt="projet sophie bluel" loading="lazy" />
               </a>
               <p>Développement d&apos;une page web dynamique avec JavaScript vanilla. Intégration d’un système de filtres interactifs pour une galerie.</p>
               <p><em>Stack :</em> HTML, CSS, JavaScript</p>
@@ -147,7 +159,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/Application-web-React" className="work__img">
-                <img src="assets/img/capture_kasa.webp" alt="projet kasa" loading="lazy" />
+                <img src={Kasa} alt="projet kasa" loading="lazy" />
               </a>
               <p>Création d’une application web React affichant des logements. Utilisation de React Router et composants dynamiques.</p>
               <p><em>Stack :</em> React, JavaScript, CSS</p>
@@ -155,7 +167,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/Projet-nina-carducci" className="work__img">
-                <img src="assets/img/capture nina_carducci.webp" alt="projet nina carducci" loading="lazy" />
+                <img src={Nina} alt="projet nina carducci" loading="lazy" />
               </a>
               <p>Optimisation SEO et accessibilité d’un site existant. Travail sur les performances, structure sémantique, et métadonnées.</p>
               <p><em>Stack :</em> HTML, CSS, Lighthouse, SEO</p>
@@ -163,7 +175,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/debuggez_application" className="work__img">
-                <img src="assets/img/Capture 724_events.webp" alt="projet debuggez une application" loading="lazy" />
+                <img src={Event} alt="projet debuggez une application" loading="lazy" />
               </a>
               <p>Débogage et correction d’une application JavaScript existante. Résolution de bugs liés aux formulaires et aux appels API.</p>
               <p><em>Stack :</em> JavaScript, Chrome DevTools</p>
@@ -171,7 +183,7 @@ export default function App() {
 
             <div className="work__item">
               <a href="https://github.com/Sulayman2005/Aregnt_Bank" className="work__img">
-                <img src="assets/img/Capture argent bank.webp" alt="projet argent bank" loading="lazy" />
+                <img src={Bank} alt="projet argent bank" loading="lazy" />
               </a>
               <p>Implémentation du front-end d’une application bancaire avec React et Redux. Authentification, gestion de session et données utilisateurs.</p>
               <p><em>Stack :</em> React, Redux, JavaScript, API REST</p>

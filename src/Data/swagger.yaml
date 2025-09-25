@@ -41,7 +41,7 @@ paths:
       summary: Récupère les infos de l'utilisateur connecté
       parameters:
         - in: header
-          name: Authorization
+          name: Security
           required: true
           schema:
             type: string
